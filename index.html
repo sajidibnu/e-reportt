@@ -1,0 +1,588 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rimuru E-Report</title>
+
+    <!-- Bootstrap CSS (cukup satu versi) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        html { scroll-behavior: smooth; }
+        body { padding-top: 90px; }              /* supaya konten tidak tertutup navbar fixed-top */
+        section[id] { scroll-margin-top: 100px; } /* supaya judul section tidak tertutup navbar saat di-scroll */
+        .service-card { background-color: #f3e5d8; color: #512d06; }
+    </style>
+</head>
+
+<body class="bg-dark text-white" data-bs-spy="scroll" data-bs-target="#menuNavbar" data-bs-offset="110" tabindex="0">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmD2cyf6pade1ufiZM9iEdZSCWm63xSoxbniQxBFr9sg&s=10"
+                     alt="Logo Rimuru E-Report" width="50" height="50" class="me-2 rounded">
+                <span>Rimuru E-Report</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuNavbar" aria-controls="menuNavbar"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavbar">
+
+                <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recent">Recent</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+
+                <form class="d-flex my-2 my-lg-0 me-lg-3" role="search" style="max-width: 300px; width: 100%;">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Cari laporan..." aria-label="Cari">
+                        <button class="btn btn-primary" type="submit" aria-label="Cari">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="d-flex gap-2">
+                    <a href="#" class="btn btn-primary">
+                        BUAT LAPORAN BARU <i class="bi bi-envelope-plus-fill"></i>
+                    </a>
+                    <a href="#" class="btn btn-success">
+                        <i class="bi bi-box-arrow-in-right"></i> LOGIN
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 mt-4">
+                <span class="badge text-bg-danger mb-3">Welcome to Rimuru Analisis E-Report</span>
+                <h1 class="fw-bold display-4">
+                    Analyze the Market,
+                    <span class="text-primary">Understand the Business</span>,
+                    <span class="text-success">Invest Smarter</span>
+                </h1>
+                <p class="text-white lead">
+                    Website kami menyediakan layanan analisis saham dan perusahaan untuk membantu pengguna memahami kondisi keuangan, kinerja bisnis, serta potensi pertumbuhan perusahaan. Melalui data, grafik, dan laporan analisis, kami membantu pengguna memperoleh wawasan sebagai bahan pertimbangan dalam mengambil keputusan investasi yang lebih terinformasi.
+                </p>
+                <p class="text-secondary small">
+                    Catatan: Analisis yang disediakan merupakan bahan pertimbangan, bukan jaminan keuntungan investasi.
+                </p>
+                <a href="#recent" class="btn btn-primary btn-lg"><i class="bi bi-plus"></i> LAPORAN BARU</a>
+                <a href="#recent" class="btn btn-success btn-lg"><i class="bi bi-eye"></i> LIHAT LAPORAN</a>
+            </div>
+            <div class="col-12 col-lg-6 mt-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsdLXocnFLTGjzBbQqvjBK2KQOAJ57_skJf8WoXz6eg&s=10"
+                     alt="Laporan perusahaan" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="container py-5">
+
+        <hr class="border border-secondary border-2 opacity-75 mb-4">
+
+        <h2 class="text-primary text-center fw-bold mb-4">ABOUT OUR WEBSITE</h2>
+
+        <p class="text-white fs-5">
+            Rimuru E-Report merupakan sebuah platform digital yang dirancang untuk menyediakan layanan analisis saham dan perusahaan. Website ini bertujuan membantu pengguna memahami kondisi keuangan, perkembangan bisnis, serta potensi pertumbuhan suatu perusahaan melalui penyajian informasi, data, grafik, dan laporan analisis yang terstruktur.
+        </p>
+        <p class="text-white fs-5">
+            Di era digital yang terus berkembang, informasi mengenai perusahaan dan pasar keuangan menjadi semakin penting bagi individu maupun pelaku bisnis. Oleh karena itu, Rimuru E-Report hadir sebagai sarana untuk membantu pengguna memperoleh informasi yang lebih terorganisasi sehingga mereka dapat mempelajari kondisi perusahaan dan memahami berbagai faktor yang memengaruhi kinerja bisnis.
+        </p>
+
+        <div class="row g-3 mt-2">
+            <div class="col-md-4">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-bar-chart-line-fill text-primary fs-3 me-3"></i>
+                    <div>
+                        <h5 class="text-white mb-1">Analisis Mendalam</h5>
+                        <p class="text-secondary small mb-0">Laporan berisi data keuangan, grafik, dan ringkasan kinerja perusahaan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-lightning-charge-fill text-warning fs-3 me-3"></i>
+                    <div>
+                        <h5 class="text-white mb-1">Mudah dan Cepat</h5>
+                        <p class="text-secondary small mb-0">Buat laporan baru atau lihat laporan yang sudah ada hanya dengan beberapa klik.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="d-flex align-items-start">
+                    <i class="bi bi-shield-check text-success fs-3 me-3"></i>
+                    <div>
+                        <h5 class="text-white mb-1">Data Terorganisir</h5>
+                        <p class="text-secondary small mb-0">Semua laporan tersimpan rapi sehingga mudah dicari dan dibandingkan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-warning mt-4 mb-0 small" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <strong>Catatan:</strong> Analisis yang disediakan merupakan bahan pertimbangan, bukan jaminan keuntungan investasi.
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="container py-5">
+
+        <hr class="border border-secondary border-2 opacity-75 mb-4">
+
+        <h2 class="text-primary text-center fw-bold mb-5">SERVICES</h2>
+
+        <div class="row g-4">
+
+            <!-- Stock Market Analysis -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card service-card border-0 rounded-3 h-100">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-3">
+                            <i class="bi bi-graph-up-arrow me-2"></i>Stock Market Analysis
+                        </h4>
+                        <p class="mb-0">
+                            Menyediakan analisis pergerakan harga saham, tren pasar, dan informasi mengenai kondisi pasar saham. Layanan ini membantu pengguna memahami pergerakan pasar sebelum mengambil keputusan investasi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Analysis -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card service-card border-0 rounded-3 h-100">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-3">
+                            <i class="bi bi-buildings me-2"></i>Company Analysis
+                        </h4>
+                        <p class="mb-0">
+                            Memberikan informasi tentang kondisi keuangan perusahaan, pendapatan, keuntungan, utang, dan perkembangan bisnis untuk membantu pengguna menilai kinerja suatu perusahaan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment Consultation -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card service-card border-0 rounded-3 h-100">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-3">
+                            <i class="bi bi-people me-2"></i>Investment Consultation
+                        </h4>
+                        <p class="mb-0">
+                            Memberikan informasi dan edukasi kepada pengguna mengenai berbagai pilihan investasi, risiko, serta hal-hal yang perlu dipertimbangkan sebelum berinvestasi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Financial Report -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card service-card border-0 rounded-3 h-100">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold mb-3">
+                            <i class="bi bi-file-earmark-bar-graph me-2"></i>Financial Report
+                        </h4>
+                        <p class="mb-0">
+                            Menyajikan informasi keuangan perusahaan dalam bentuk laporan yang mudah dipahami, seperti pendapatan, laba bersih, aset, dan kewajiban perusahaan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RECENT REPORTS -->
+    <section id="recent" class="container py-5">
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+            <div>
+                <span class="text-primary fw-bold">RECENT REPORTS</span>
+                <h2 class="fw-bold mt-2">Latest Analysis &amp; News</h2>
+                <p class="text-secondary mb-0">Temukan berita terbaru dan analisis perusahaan.</p>
+            </div>
+            <a href="#recent" class="btn btn-outline-primary">
+                View All Reports <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- LAPORAN 1: APPLE -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHrf5837dGvW35CQYDL1a8nu2TzLWVRHhN0ev2mGn3hQ&s=10"
+                         class="card-img-top" alt="Ilustrasi teknologi dan bisnis"
+                         style="height: 220px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-primary align-self-start mb-2">Stock Analysis</span>
+                        <h5 class="card-title fw-bold">Apple Inc (AAPL)</h5>
+                        <p class="text-secondary small">
+                            <i class="bi bi-calendar3"></i> 29 Oktober 2026
+                        </p>
+
+                        <div class="card-text">
+                            <p class="mb-2">Berdasarkan data yang tersedia hingga 29 Oktober 2026, saham Apple dirangkum sebagai berikut:</p>
+                            <ul class="ps-3">
+                                <li><strong>Kekuatan:</strong> pertumbuhan pendapatan, keuntungan, dan ekosistem produk yang luas.</li>
+                                <li><strong>Peluang:</strong> inovasi produk baru serta pengembangan layanan dan fitur kecerdasan buatan.</li>
+                                <li><strong>Risiko:</strong> biaya komponen, valuasi yang relatif tinggi, dan kemungkinan pertumbuhan melambat.</li>
+                                <li><strong>Perlu dipantau:</strong> laporan keuangan terbaru dan proyeksi manajemen.</li>
+                            </ul>
+                            <p>
+                                Secara fundamental, Apple menunjukkan bisnis yang kuat berdasarkan laporan keuangan kuartal ketiga 2026. Namun, informasi tersebut belum cukup untuk memastikan bahwa saham AAPL sedang murah atau bahwa harganya akan terus naik.
+                            </p>
+                            <p class="fst-italic small text-secondary">
+                                Analisis ini bersifat edukatif, bukan rekomendasi untuk membeli atau menjual saham.
+                            </p>
+                        </div>
+
+                        <div class="mt-auto d-flex gap-2">
+                            <button class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#reportModal"
+                                data-title="Apple Inc. (AAPL)"
+                                data-category="Stock Analysis"
+                                data-image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+                                data-description="Laporan ini membahas analisis perusahaan Apple, termasuk sumber pendapatan, perkembangan produk, persaingan industri, dan faktor yang dapat memengaruhi sahamnya. Untuk analisis yang lebih lengkap, perhatikan laporan keuangan resmi, pertumbuhan pendapatan, margin keuntungan, dan risiko bisnis. Konten ini merupakan contoh demonstrasi, bukan hasil riset keuangan aktual.">
+                                <i class="bi bi-book"></i> Read More
+                            </button>
+
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reportModal"
+                                aria-label="Laporan lengkap Apple"
+                                data-title="Laporan Apple Inc. (AAPL)"
+                                data-category="Full Report"
+                                data-image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+                                data-description="Laporan lengkap Apple dapat mencakup profil perusahaan, sumber pendapatan, pertumbuhan bisnis, analisis fundamental, risiko, dan prospek industri. Lengkapi bagian ini dengan data keuangan resmi sebelum digunakan sebagai laporan aktual.">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAPORAN 2: BBCA -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1VuHX-iTcyvm059YOyWIyKhHGtISHH__i9Yuwt6RUg&s=10"
+                         class="card-img-top" alt="Ilustrasi kantor perusahaan"
+                         style="height: 220px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-success align-self-start mb-2">Company Analysis</span>
+                        <h5 class="card-title fw-bold">BBCA</h5>
+                        <p class="text-secondary small">
+                            <i class="bi bi-calendar3"></i> 28 Oktober 2026
+                        </p>
+
+                        <div class="card-text">
+                            <p>Fundamental BBCA masih cukup kuat, tetapi pergerakan harga sahamnya perlu dicermati.</p>
+                            <p>
+                                BCA membukukan laba bersih Rp45,2 triliun selama sembilan bulan pertama 2026, dengan pertumbuhan laba 4,2% dan pertumbuhan kredit 12,6%. Hal ini menunjukkan bahwa kegiatan bisnisnya masih berkembang.
+                            </p>
+                            <p>
+                                Namun, investor perlu mempertimbangkan valuasi, kondisi pasar, pertumbuhan laba berikutnya, dan risiko penurunan harga. Kenaikan harga dalam satu hari saja belum cukup untuk menyatakan saham tersebut akan terus naik.
+                            </p>
+                            <p class="fst-italic small text-secondary">
+                                Analisis ini bersifat edukatif, bukan rekomendasi untuk membeli atau menjual saham.
+                            </p>
+                        </div>
+
+                        <div class="mt-auto d-flex gap-2">
+                            <button class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#reportModal"
+                                data-title="BBCA"
+                                data-category="Company Analysis"
+                                data-image="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                                data-description="Analisis BBCA dapat mencakup laba bersih, pertumbuhan kredit, kualitas aset, valuasi, dan kondisi pasar. Berdasarkan ringkasan di kartu laporan, BCA membukukan laba bersih Rp45,2 triliun selama sembilan bulan pertama 2026 dengan pertumbuhan laba 4,2% dan pertumbuhan kredit 12,6%. Untuk menilai kinerja secara akurat, gunakan laporan keuangan resmi dan bandingkan data dari beberapa periode.">
+                                <i class="bi bi-book"></i> Read More
+                            </button>
+
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reportModal"
+                                aria-label="Laporan lengkap BBCA"
+                                data-title="Laporan BBCA"
+                                data-category="Full Report"
+                                data-image="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                                data-description="Laporan lengkap BBCA dapat membahas profil bisnis, sumber pendapatan, pertumbuhan kredit, kinerja keuangan, valuasi, dan risiko. Tambahkan angka dari laporan resmi agar analisis ini dapat dipertanggungjawabkan.">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAPORAN 3: DEWA -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdsAVWTSgWXbD-E-ZlI5WkaQHWaDPjy7ci_AHlo_s7BA&s"
+                         class="card-img-top" alt="Grafik pasar keuangan"
+                         style="height: 220px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-warning align-self-start mb-2">Stock Analysis</span>
+                        <h5 class="card-title fw-bold">DEWA</h5>
+                        <p class="text-secondary small">
+                            <i class="bi bi-calendar3"></i> 27 Oktober 2026
+                        </p>
+
+                        <div class="card-text">
+                            <p>
+                                Secara fundamental, DEWA menunjukkan perbaikan kinerja yang signifikan hingga September 2026. Namun, peningkatan liabilitas dan penurunan kas menjadi faktor penting yang perlu diperhatikan. Pertumbuhan laba yang tinggi juga belum menjamin harga saham akan terus naik.
+                            </p>
+                            <p>
+                                Untuk menilai prospek DEWA lebih lanjut, perkembangan kontrak pertambangan, arus kas operasional, beban keuangan, dan laporan keuangan kuartal berikutnya perlu diperiksa.
+                            </p>
+                            <p class="fst-italic small text-secondary">
+                                Analisis ini bersifat edukatif, bukan rekomendasi untuk membeli atau menjual saham.
+                            </p>
+                        </div>
+
+                        <div class="mt-auto d-flex gap-2">
+                            <button class="btn btn-primary flex-fill" data-bs-toggle="modal" data-bs-target="#reportModal"
+                                data-title="DEWA"
+                                data-category="Stock Analysis"
+                                data-image="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80"
+                                data-description="Analisis DEWA mencakup perbaikan kinerja hingga September 2026, peningkatan liabilitas, penurunan kas, serta hal-hal yang perlu diperiksa seperti kontrak pertambangan, arus kas operasional, beban keuangan, dan laporan keuangan kuartal berikutnya. Tren historis tidak menjamin hasil masa depan. Konten ini merupakan materi edukasi, bukan rekomendasi investasi.">
+                                <i class="bi bi-book"></i> Read More
+                            </button>
+
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reportModal"
+                                aria-label="Laporan lengkap DEWA"
+                                data-title="Laporan DEWA"
+                                data-category="Full Report"
+                                data-image="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80"
+                                data-description="Laporan lengkap DEWA dapat mencakup kondisi keuangan, pergerakan harga, tren industri, volatilitas, dan risiko investasi. Gunakan data pasar aktual serta cantumkan tanggal dan sumber data untuk menghindari informasi yang menyesatkan.">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL DETAIL LAPORAN -->
+    <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="reportModalLabel">Detail Laporan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <img id="modalImage" src="" class="img-fluid rounded mb-3 w-100"
+                         alt="Gambar laporan" style="max-height: 350px; object-fit: cover;">
+
+                    <span id="modalCategory" class="badge text-bg-primary mb-3"></span>
+                    <h3 id="modalTitle" class="fw-bold"></h3>
+                    <hr>
+                    <h5>Penjelasan Lengkap</h5>
+                    <p id="modalDescription" class="text-secondary" style="line-height: 1.8;"></p>
+
+                    <div class="alert alert-info mb-0">
+                        <i class="bi bi-info-circle"></i>
+                        Pastikan data dan sumber berita diperiksa sebelum digunakan sebagai dasar keputusan investasi.
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <span class="badge text-bg-primary">FAQ</span>
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+                <p class="text-secondary lead">Beberapa pertanyaan yang mungkin ingin Anda ajukan.</p>
+            </div>
+
+            <div class="accordion" id="accordionFAQ">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ1">
+                            What is this website about?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="FAQ1" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body text-primary">
+                            <p class="mb-0">Website ini menyediakan informasi dan analisis mengenai saham serta perusahaan untuk membantu pengunjung memahami kondisi perusahaan, kinerja bisnis, dan perkembangan pasar saham.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ2">
+                            Can I use the analysis to make investment decisions?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="FAQ2" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body text-primary">
+                            <p class="mb-0">Ya, informasi dan analisis di website ini dapat digunakan sebagai bahan referensi untuk mempelajari saham dan perusahaan. Namun, setiap keputusan investasi harus mempertimbangkan risiko, tujuan keuangan, dan riset mandiri.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ3">
+                            How can I analyze a company's performance?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="FAQ3" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body text-primary">
+                            <p class="mb-0">Pengunjung dapat membaca laporan analisis perusahaan yang tersedia di website kami. Laporan tersebut dapat mencakup pendapatan, keuntungan, pertumbuhan bisnis, dan faktor lain yang memengaruhi kinerja perusahaan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ4">
+                            Can beginners use this website?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="FAQ4" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body text-primary">
+                            <p class="mb-0">Ya! Website ini dirancang agar dapat membantu pemula maupun orang yang sudah berpengalaman memahami saham dan perusahaan melalui informasi yang disajikan secara jelas dan mudah dipahami.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ5">
+                            Is the analysis provided on this website guaranteed to be accurate?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="FAQ5" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body text-primary">
+                            <p class="mb-0">Kami berusaha menyajikan informasi dan analisis berdasarkan sumber yang relevan. Namun, kondisi pasar dapat berubah sewaktu-waktu. Oleh karena itu, analisis kami tidak menjamin hasil investasi tertentu dan sebaiknya digunakan sebagai bahan pertimbangan tambahan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ6">
+                            Do you provide the latest stock market news?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="FAQ6" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body text-primary">
+                            <p class="mb-0">Ya, website kami dapat menyajikan berita dan informasi terbaru mengenai pasar saham, perkembangan perusahaan, serta faktor ekonomi yang dapat memengaruhi pasar keuangan.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-black text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h3 class="fw-bold"><span class="text-success">Rimuru</span> E-Report</h3>
+                    <p class="text-secondary">
+                        Your trusted source for stock analysis, company insights, and investment information. We help you understand financial markets through information and analysis.
+                    </p>
+                    <span class="badge bg-success">Investment &amp; Analysis</span>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="link-secondary text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="link-secondary text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#services" class="link-secondary text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#faq" class="link-secondary text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Our Services</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2">Stock Analysis</li>
+                        <li class="mb-2">Company Analysis</li>
+                        <li class="mb-2">Financial News</li>
+                        <li class="mb-2">Investment Insights</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Connect With Us</h5>
+                    <p class="text-secondary">
+                        Stay informed about the financial market and discover new insights with us.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.instagram.com/" class="link-success text-decoration-none" aria-label="Instagram"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="https://www.facebook.com/" class="link-success text-decoration-none" aria-label="Facebook"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="https://www.youtube.com/" class="link-success text-decoration-none" aria-label="YouTube"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-secondary mb-2 mb-md-0">&copy; 2026 Rimuru E-Report. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <span class="text-success">Information. Analysis. Insight.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (cukup satu kali, di akhir body) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Isi modal sesuai tombol yang diklik
+        const reportModal = document.getElementById("reportModal");
+
+        reportModal.addEventListener("show.bs.modal", function (event) {
+            const button = event.relatedTarget;
+
+            document.getElementById("modalTitle").textContent = button.getAttribute("data-title");
+            document.getElementById("modalCategory").textContent = button.getAttribute("data-category");
+            document.getElementById("modalImage").src = button.getAttribute("data-image");
+            document.getElementById("modalDescription").textContent = button.getAttribute("data-description");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E_report!</title>
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+   <nav class="navbar topbar px-4">
+        <span class="navbar-brand text-white fw-bold">
+            E_report <span class="brand-light">santri</span> 
+        </span>
+        <div class="admin-profile">
+            <div class="">
+                <span>Admin</span> 
+                <small>pengelola sistem</small>
+            </div>
+            <div class="admin-avatar">AD</div>
+        </div>
+
+   </nav>
+
+   <div class="row">
+       <aside class="sidebar col-lg-2 p-4">
+       <h5 class="menu-label">menu</h5>
+        <a href="index.html" class="menu-link active"> <i class="bi bi-bar-chart"></i> Dashboard</a>
+        <a href="statistik.html" class="menu-link"> <i class="bi bi-clipboard-data"></i> Data laporan</a>
+        <a href="pengaturan.html" class="menu-link"> <i class="bi bi-gear"></i> Pengaturan</a>
+       </aside>
+       <main class="col-lg-10 p-4"> 
+           <h2>Dashboard</h2>
+           <p>Selamat datang di aplikasi E-report santri</p>
+           <div class="row">
+
+               <!-- card 1 -->
+                  <div class="col-lg-3">
+                      <div class="card stat-card h-100">
+                          <div class="card-body"> 
+                              
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div>
+                                      <p class="text-secondary mb-1">total santri</p>
+                                      <h3 class="fw-bold">145</h3>
+       
+                                      <div class="stat-icon bg-primary-subtle text-primary">
+                                          <i class="bi bi-people-fill"></i>
+                                       </div>
+                                   </div>
+                               </div>
+                               <small>Data seluruh santri</small>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- end card 1 -->
+               <!-- card 2 -->
+                  <div class="col-lg-3">
+                      <div class="card stat-card h-100">
+                          <div class="card-body"> 
+                              
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div>
+                                      <p class="text-secondary mb-1">total laporan</p>
+                                      <h3 class="fw-bold">56</h3>
+       
+                                      <div class="stat-icon bg-primary-subtle text-primary">
+                                          <i class="bi bi-journal-bookmark-fill"></i>
+                                       </div>
+                                   </div>
+                               </div>
+                               <small>Data seluruh laporan</small>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- end card 2 -->
+               <!-- card 3 -->
+                  <div class="col-lg-3">
+                      <div class="card stat-card h-100">
+                          <div class="card-body"> 
+                              
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div>
+                                      <p class="text-secondary mb-1">total kelas</p>
+                                      <h3 class="fw-bold">11</h3>
+       
+                                      <div class="stat-icon bg-primary-subtle text-primary">
+                                           <i class="bi bi-person-video"></i>
+                                       </div>
+                                   </div>
+                               </div>
+                               <small>Data seluruh kelas</small>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- end card 3 -->
+               <!-- card 4 -->
+                  <div class="col-lg-3">
+                      <div class="card stat-card h-100">
+                          <div class="card-body"> 
+                              
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <div>
+                                      <p class="text-secondary mb-1">total asrama</p>
+                                      <h3 class="fw-bold">14+</h3>
+       
+                                      <div class="stat-icon bg-primary-subtle text-primary">
+                                          <i class="bi bi-house-add-fill"></i>
+                                       </div>
+                                   </div>
+                               </div>
+                               <small>Data seluruh asrama</small>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- end card 4 -->
+        </div>
+        <div class="row g-4 mt-2">
+          <!-- total santri -->
+
+          <!-- card-stat-1 -->
+           <div class="col-lg-3">
+            <div class="card stat-card">
+                <div class="stat-atas">
+                    <div>
+                        <p class="stat-label">total santri</p>
+                        <h3 class="stat-number">145</h3>
+                        <span class="stat-keterangan text-primary">
+                            data seluruh santri
+                            <i class="bi bi-person"></i>
+                        </span>
+                    </div>
+                    <div class="lingkaran-progres progres-biru">
+                        <div class="isi-lingkaran"> <span>75%</span> </div>
+                    </div>
+                </div>
+                <div class="garis-progres">
+                   <div class="isi-garis garis-biru"></div>
+                </div>
+            </div>
+           </div>
+           <!-- end-stat-1 -->
+          <!-- card-stat-2 -->
+           <div class="col-lg-3">
+            <div class="card stat-card">
+                <div class="stat-atas">
+                    <div>
+                        <p class="stat-label">total laporan</p>
+                        <h3 class="stat-number">56</h3>
+                        <span class="stat-keterangan text-success">
+                            data seluruh laporan
+                            <i class="bi bi-person"></i>
+                        </span>
+                    </div>
+                    <div class="lingkaran-progres progres-hijau">
+                        <div class="isi-lingkaran"> <span>50%</span> </div>
+                    </div>
+                </div>
+                <div class="garis-progres">
+                   <div class="isi-garis garis-biru"></div>
+                </div>
+            </div>
+           </div>
+           <!-- end-stat-2 -->
+          <!-- card-stat-3 -->
+           <div class="col-lg-3">
+            <div class="card stat-card">
+                <div class="stat-atas">
+                    <div>
+                        <p class="stat-label">total kelas</p>
+                        <h3 class="stat-number">11</h3>
+                        <span class="stat-keterangan text-secondary">
+                            data seluruh kelas
+                            <i class="bi bi-person"></i>
+                        </span>
+                    </div>
+                    <div class="lingkaran-progres progres-abu">
+                        <div class="isi-lingkaran"> <span>90%</span> </div>
+                    </div>
+                </div>
+                <div class="garis-progres">
+                   <div class="isi-garis garis-biru"></div>
+                </div>
+            </div>
+           </div>
+           <!-- end-stat-3 -->
+          <!-- card-stat-4 -->
+           <div class="col-lg-3">
+            <div class="card stat-card">
+                <div class="stat-atas">
+                    <div>
+                        <p class="stat-label">total asrama</p>
+                        <h3 class="stat-number">14+</h3>
+                        <span class="stat-keterangan text-danger">
+                            data seluruh asrama
+                            <i class="bi bi-person"></i>
+                        </span>
+                    </div>
+                    <div class="lingkaran-progres progres-merah">
+                        <div class="isi-lingkaran"> <span>40%</span> </div>
+                    </div>
+                </div>
+                <div class="garis-progres">
+                   <div class="isi-garis garis-biru"></div>
+                </div>
+            </div>
+           </div>
+           <!-- end-stat-4 -->
+        </div>
+        <div class="mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h4 class="judul bagian mb-1">Data laporan</h4>
+                    <p class="text-secondary">daftar laporan santri</p>
+                </div>
+                <button class="btn btn-success"><i class="bi bi-plus-lg"></i> Tambah laporan</button>
+            </div>
+            
+            <div class="card table-laporan">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>NO</th>
+                                    <th>Nama santri</th>
+                                    <th>Jenis laporan</th>
+                                    <th>Tanggal</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Elang</td>
+                                    <td>English punishment</td>
+                                    <td>20 oktober 2026</td>
+                                    <td><span class="badge text-bg-warning">Menunggu</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning text-light"><i class="bi bi-eye"></i></button>
+                                        <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+                                        <button class="btn btn-sm btn-info"><i class="bi bi-pen"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Hauzan</td>
+                                    <td>main rubik</td>
+                                    <td>20 oktober 2026</td>
+                                    <td><span class="badge text-bg-danger">ditolak</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning text-light"><i class="bi bi-eye"></i></button>
+                                        <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+                                        <button class="btn btn-sm btn-info"><i class="bi bi-pen"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sajid</td>
+                                    <td>baca komik</td>
+                                    <td>20 oktober 2026</td>
+                                    <td><span class="badge text-bg-success">diterima</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning text-light"><i class="bi bi-eye"></i></button>
+                                        <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+                                        <button class="btn btn-sm btn-info"><i class="bi bi-pen"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Hadi</td>
+                                    <td>nonton anime H</td>
+                                    <td>20 oktober 2026</td>
+                                    <td><span class="badge text-bg-success">diterima</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning text-light"><i class="bi bi-eye"></i></button>
+                                        <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+                                        <button class="btn btn-sm btn-info"><i class="bi bi-pen"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                  <ul class="pagination m-2">
+                    <li class="page-item"><a href="" class="page-link">previous</a></li>
+                    <li class="page-item"><a href="" class="page-link">1</a></li>
+                    <li class="page-item"><a href="" class="page-link">2</a></li>
+                    <li class="page-item"><a href="" class="page-link">3</a></li>
+                    <li class="page-item"><a href="" class="page-link">next</a></li>
+                  </ul>
+
+            </div>
+
+        </div>
+        </main>
+    </div>
+    
+
+   <script src="boostrap/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
